@@ -1,0 +1,30 @@
+<div class="container my-4">
+  @if (product) {
+    <div class="row">
+      <div class="col">
+        <img [src]="['images/' + product.image]" class="img-fluid" alt="{{ product.name }}" />
+      </div>
+      <div class="col info">
+        <h2>
+          <strong>{{ product.name }}</strong>
+        </h2>
+        <p>{{ product.description }}</p>
+        <ul>
+          <li><b>Brand:</b> {{ product.brand }}</li>
+          <li><b>Category:</b> {{ product.category }}</li>
+          <li><b>Price:</b> {{ product.price }}</li>
+        </ul>
+        <button routerLink="orders" class="btn cartbtn ms-3">Add to cart</button>
+      </div>
+    </div>
+  } @else {
+    <div class="container">
+      <h1>Product not found</h1>
+      <p>Please get back to the previous page</p>
+      <img
+        src="https://media.gettyimages.com/id/538717535/de/foto/pallas-cat-with-big-eyes.webp?s=2048x2048&w=gi&k=20&c=zc86kgXnt5V81DqmEO3AN8XSmEjEBNlhVPXzjUM0E-I="
+        alt="shocked cat"
+      />
+    </div>
+  }
+</div>
