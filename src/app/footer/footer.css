@@ -1,0 +1,14 @@
+footer {
+  background-color: darkturquoise;
+}
+
+.container a {
+  color: white;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+i {
+  margin-right: 3rem;
+  margin-bottom: 1rem;
+}

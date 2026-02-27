@@ -1,0 +1,9 @@
+nav {
+  background-color: darkturquoise;
+}
+
+.navbar a {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
