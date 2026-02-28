@@ -27,7 +27,7 @@
               <a [routerLink]="['/details', catazonProduct.id]" class="btn btn-warning me-3"
                 >Details</a
               >
-              <button routerLink="orders" class="btn cartbtn">Add to cart</button>
+              <button class="btn cartbtn" (click)="addToOrders(catazonProduct)">Add to cart</button>
             }
           </div>
         </div>

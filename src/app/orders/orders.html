@@ -1,1 +1,39 @@
-<p>orders works!</p>
+<div class="container">
+  @if (ordersItems.length > 0) {
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th scope="col">Total Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of ordersItems; track $index) {
+          <tr>
+            <td class="w-25">
+              <img
+                class="w-100 img-fluid avatar"
+                [src]="'images/' + item.image"
+                alt="{{ item.name }}"
+              />
+            </td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.price }} €</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.price * item.quantity }} €</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+    <div class="total text-end me-5">
+      <h3>
+        <b>Total Price: {{ total }} €</b>
+      </h3>
+    </div>
+  } @else {
+    <h1 class="color">The cart is empty!</h1>
+  }
+</div>

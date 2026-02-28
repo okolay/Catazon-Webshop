@@ -1,0 +1,8 @@
+.avatar {
+  height: 200px;
+  object-fit: cover;
+}
+
+.color {
+  color: blueviolet;
+}
