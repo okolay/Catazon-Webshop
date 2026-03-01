@@ -6,3 +6,37 @@
 .color {
   color: blueviolet;
 }
+
+#shocked {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  width: 50%;
+  height: auto;
+}
+
+.containercat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  align-content: center;
+}
+
+.service-section h3 {
+  background-color: blueviolet;
+  border-radius: 60%;
+  border: 1, solid, white;
+  padding: 1rem;
+  color: white;
+}
+
+.service-section p {
+  font-size: 1.5rem;
+}

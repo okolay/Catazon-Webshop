@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { IProduct } from './iproduct.interface';
-import { PRODUCTS } from './products';
+
 
 @Injectable({
   providedIn: 'root',
@@ -30,5 +30,31 @@ calculateTotal() {
   return total
 }
 
+calculateServiceFee() {
+  let serviceFee = (this.calculateTotal()*0.10)
+  // let serviceAndTotal = this.serviceFee + this.ordersService.calculateServiceFee()
+  return serviceFee
 }
+
+totalAndServiceFee() {
+  let totalAndService = this.calculateTotal() + this.calculateServiceFee()
+  return totalAndService
+  
+}
+
+calculateDiscount() {
+  let discount = 0
+  discount = this.totalAndServiceFee() * 0.15
+  return discount    
+  }
+
+  finalPrice() {
+    let final = 0
+    final = this.totalAndServiceFee()-this.calculateDiscount()
+    return final
+  }
+
+}
+
+
 

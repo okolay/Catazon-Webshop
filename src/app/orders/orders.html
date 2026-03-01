@@ -28,12 +28,22 @@
         }
       </tbody>
     </table>
-    <div class="total text-end me-5">
-      <h3>
-        <b>Total Price: {{ total }} €</b>
-      </h3>
+    <div class="service-section">
+      <h3>Order summary</h3>
+      <p>Items total: {{ total }} €</p>
+      <p>Service (10%): {{ serviceFee }} €</p>
+      <p>Total with service: {{ servicePlusTotal }} €</p>
+      <p>Discount (15%): {{ discount }} €</p>
+      <p>Final price: {{ finalPrice }} €</p>
     </div>
   } @else {
-    <h1 class="color">The cart is empty!</h1>
+    <div class="containercat">
+      <h1 class="color">The cart is empty!</h1>
+      <img
+        id="shocked"
+        src="https://media.gettyimages.com/id/538717535/de/foto/pallas-cat-with-big-eyes.webp?s=2048x2048&w=gi&k=20&c=zc86kgXnt5V81DqmEO3AN8XSmEjEBNlhVPXzjUM0E-I="
+        alt="shocked cat"
+      />
+    </div>
   }
 </div>

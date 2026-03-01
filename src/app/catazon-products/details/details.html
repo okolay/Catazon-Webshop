@@ -14,7 +14,9 @@
           <li><b>Category:</b> {{ product.category }}</li>
           <li><b>Price:</b> {{ product.price }}</li>
         </ul>
-        <button routerLink="orders" class="btn cartbtn ms-3">Add to cart</button>
+        <button (click)="addToOrders(product)" class="btn cartbtn ms-3 text-white">
+          Add to cart
+        </button>
       </div>
     </div>
   } @else {
