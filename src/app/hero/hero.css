@@ -1,0 +1,21 @@
+.carousel-inner {
+  height: 100vh;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+#carouselExampleIndicators {
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  z-index: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
