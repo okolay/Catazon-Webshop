@@ -1,6 +1,13 @@
-# CatazonStore
+# Catazon e-commerce store
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.
+## Requirement: 
+An e-commerce store to ease buying process for customers.
+
+## Solution: 
+Full-featured online marketplace with real-time inventory.
+
+
+*This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.4.*
 
 ## Development server
 
