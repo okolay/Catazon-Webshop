@@ -27,11 +27,4 @@ A full-stack webshop demo inspired by e-commerce flows (browse catalog, manage c
     Frontend: Angular/HTML/CSS/JavaScript
     Version control: Git
 
-## Local Setup
 
-    Clone the repository
-    Install dependencies
-    Configure environment variables (DB connection)
-    Create the database + run migrations
-    Start the local server
-    Open the app in your browser
